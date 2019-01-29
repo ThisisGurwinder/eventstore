@@ -43,7 +43,7 @@ defmodule EventStore.Mixfile do
       {:elixir_uuid, "~> 1.2"},
       {:fsm, "~> 0.3"},
       {:gen_stage, "~> 0.14"},
-      {:postgrex, "~> 0.14"},
+      {:postgrex,  [env: :prod, git: "https://github.com/ThisisGurwinder/postgrex.git", manager: :mix]},
 
       # Optional dependencies
       {:jason, "~> 1.1", optional: true},
